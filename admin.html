@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Manage Products</title>
+    <link rel="stylesheet" type="text/css" href="admin.css">
+</head>
+<body>
+    <h1>Admin - Manage Products</h1>
+    <button id="backToProductPageBtn"> Product Page</button>
+    <form id="productForm">
+        <input type="url" id="productImage" placeholder="Product Image URL" required><br><br>
+        <input type="text" id="productName" placeholder="Product Name" required><br><br>
+        <input type="number" id="productPrice" placeholder="Product Price" required><br><br>
+        <input type="text" id="productDescription" placeholder="Product Description" required><br><br>
+        <button type="button" id="addProductBtn">Add Product</button>
+    </form>
+    <h2>Product List</h2>
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>Image URL</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="productTableBody"></tbody>
+    </table>
+    <script type="module" src="admin.js"></script>
+</body>
+</html>

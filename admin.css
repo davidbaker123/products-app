@@ -1,0 +1,51 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #144667; 
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    background-color: #89b3de;
+    color: black;
+}
+
+tbody {
+    background-color: #518599;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+tr:hover {
+    background-color: #144667; 
+}
+
+button {
+    background-color: #daaa0d; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#backToProductPageBtn{
+    float: right;
+}
+
+
+
+button:hover {
+    background-color: #273136; 
+}
