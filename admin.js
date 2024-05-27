@@ -77,7 +77,7 @@ window.editProduct = (id, image, name, price, description) => {
 
     addProductBtn.removeEventListener("click", addProduct);
     addProductBtn.textContent = "Update Product";
-    addProductBtn.addEventListener("click", () => updateProduct(id));
+    addProductBtn.onclick = () => updateProduct(id);
 }
 
 async function updateProduct(id) {
@@ -97,9 +97,8 @@ async function updateProduct(id) {
         alert("Product updated successfully!");
         populateProductTable();
 
-        addProductBtn.removeEventListener("click", () => updateProduct(id));
         addProductBtn.textContent = "Add Product";
-        addProductBtn.addEventListener("click", addProduct);
+        addProductBtn.onclick = addProduct;
     } catch (error) {
         console.error("Error updating product: ", error.message);
         alert("Error updating product: " + error.message);

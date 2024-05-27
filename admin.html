@@ -8,22 +8,22 @@
 </head>
 <body>
     <h1>Admin - Manage Products</h1>
-    <button id="backToProductPageBtn"> Product Page</button>
     <form id="productForm">
-        <input type="url" id="productImage" placeholder="Product Image URL" required><br><br>
         <input type="text" id="productName" placeholder="Product Name" required><br><br>
         <input type="number" id="productPrice" placeholder="Product Price" required><br><br>
         <input type="text" id="productDescription" placeholder="Product Description" required><br><br>
+        <input type="url" id="productImage" placeholder="Product Image URL" required><br><br>
         <button type="button" id="addProductBtn">Add Product</button>
+        <button type="button" id="backToProductPageBtn">Back to Product Page</button>
     </form>
     <h2>Product List</h2>
     <table id="productTable">
         <thead>
             <tr>
-                <th>Image URL</th>
                 <th>Name</th>
                 <th>Price</th>
                 <th>Description</th>
+                <th>Image URL</th>
                 <th>Actions</th>
             </tr>
         </thead>
